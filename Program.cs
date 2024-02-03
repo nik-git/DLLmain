@@ -28,7 +28,7 @@ namespace test
             object instance = Activator.CreateInstance(type);
 
             MethodInfo[] methods = type.GetMethods();
-            object res = methods[0].Invoke(instance, new object[] { 5, 3 });
+            object res = methods[0].Invoke(instance, new object[] { 8, 3 });
             
             
             Console.WriteLine("from DLLproject.dll: " + res.ToString());
